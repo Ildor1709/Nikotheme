@@ -1,3 +1,5 @@
-baseURL = "http://example.org/"
+theme = "Niko_theme"
+baseurl = ""
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Nikotheme - totally refreshing"
+MetaDataFormat = "toml"
