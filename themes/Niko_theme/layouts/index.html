@@ -1,6 +1,43 @@
 <!DOCTYPE html> 
 <html> 
 <body> 
-  <p>hugo says hello!</p> 
+
+<div class="w3-container">
+  <h2>Animate Fade In and Out</h2>
+  <p>The w3-animate-fading class fades in and out elements every 10 seconds (continuously).</p>
+  <img class="w3-animate-fading" src="../../../../../Users/NikoHadi/Desktop/ski-resorts-01-kitzbuhel-super-169.jpg" style="width:100%">
+</div>
+
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+<img class="mySlides" src="../../../../../Users/NikoHadi/Desktop/skiing-1.jpg">
+<img class="mySlides" src="../../../../../Users/NikoHadi/Desktop/xskiing2.jpg">
+
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
 </body> 
-</html> 
+
+</html>
