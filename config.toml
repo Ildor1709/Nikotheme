@@ -1,5 +1,5 @@
 theme = "Niko_theme"
-baseurl = ""
+baseurl = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Nikotheme - totally refreshing"
 MetaDataFormat = "toml"
