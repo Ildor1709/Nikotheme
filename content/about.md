@@ -14,7 +14,7 @@ menu: "about_menu"
    <a href="index.html">Home</a>
     <a href="../../../content/about.md">About</a> 
 	  <a href="#">documentation</a>
-    <a href="#">Contact</a>
+    
   </div>
 </div>
 </body>
