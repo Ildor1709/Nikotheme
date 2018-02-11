@@ -14,10 +14,10 @@ MetaDataFormat = "toml"
 
 [[menu.main]]
     name = "About"
-    title = ""
+    title = "About"
     weight = 2
     identifier = "About"
-    url = "/about/"
+    url = "/content/about/"
 [[menu.main]]
     name = "Color"
     title = ""
@@ -27,7 +27,7 @@ MetaDataFormat = "toml"
 	
 [[menu.main]]
     name = "Typography"
-    title = ""
-    weight = 2
+    title = "_Typography"
+    weight = 5
 	identifier = "_typography"
     url = "/_typography/"
