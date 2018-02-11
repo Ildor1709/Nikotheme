@@ -1,7 +1,7 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
  body {
@@ -58,7 +58,18 @@
   }
 }
 </style>
-<body>
+	</head>
+
+<img class="mySlides" src="../static/imgs/snow1.jpeg">
+<img class="mySlides" src="../static/imgs/snow2.jpeg">
+<img class="mySlides" src="../static/imgs/snowlake.jpeg">
+
+
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+
+<body background="../static/imgs/Snowflake.jpg">
 
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -73,40 +84,34 @@
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
 
-<div class="w3-container">
- <img class="w3-animate-fading" src="../../../../../Users/NikoHadi/Desktop/ski-resorts-01-kitzbuhel-super-169.jpg" style="width:100%">
+<div class="photoset-grid-basic" data-layout="12">
+  <img src="../static/imgs/snow1_500px.jpg" width="640" height="480" 
+  <img src="../static/imgs/snow2_500px.jpg" width="250" height="188" 
+  <img src="../static/imgs/snowlake_500px.jpg" width="250" height="334" 
 </div>
 
-<h2 class="w3-center">Manual Slideshow</h2>
-
-<div class="w3-content w3-display-container">
-<img class="mySlides" src="../../../../../Users/NikoHadi/Desktop/skiing-1.jpg">
-<img class="mySlides" src="../../../../../Users/NikoHadi/Desktop/xskiing2.jpg">
-
-<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-</div>
 
 <script>
+	
 var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+    showDivs(slideIndex += n);
 }
 
 function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}	
+	
 </script>
-
 
 <script>
 function openNav() {
@@ -116,8 +121,13 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+	
 </script>
 
-</body> 
+<script>
+$('.photoset-grid-basic').photosetGrid();	
+	</script>
 
+
+</body>
 </html>
