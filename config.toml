@@ -3,3 +3,31 @@ baseurl = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Nikotheme - totally refreshing"
 MetaDataFormat = "toml"
+
+
+[[menu.main]]
+    name = "Home"
+    title = ""
+    weight = 1
+    identifier = "Home"
+    url = "/"
+
+[[menu.main]]
+    name = "About"
+    title = ""
+    weight = 2
+    identifier = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "Color"
+    title = ""
+    weight = 2
+	identifier = "_color"
+    url = "/_color/"
+	
+[[menu.main]]
+    name = "Typography"
+    title = ""
+    weight = 2
+	identifier = "_typography"
+    url = "/_typography/"

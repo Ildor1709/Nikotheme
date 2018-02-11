@@ -6,12 +6,12 @@
 
 <body>
 
-	<header>
-		<div class="wrapper">
-			<a href="{{.Site.BaseURL}}" class="sitelogo">Nikotheme</a>
-			<nav class="header-menu">{{} partial "nav" . }</nav>
-		</div>
-	</header>
+<nav class="sidebar-nav">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    {{ end }}
+</nav>
 
 </body>
 
